@@ -1,0 +1,33 @@
+a {
+    text-decoration: none;
+    color: #8C6C6B !important;
+}
+
+.logo {
+    width: 130px;
+    border-radius: 25%;
+    box-shadow: 10px 11px 7px rgba(0, 0, 0, 0.25);
+}
+
+.quote {
+    font-size: 15px;
+    height: auto;
+    font-family: "Brush Script MT";
+    font-weight: normal;
+    text-transform: none;
+    background: #FFDAB9;
+    border-radius: 10px;
+    color: black;
+}
+
+.navigation {
+    font-size: 15px;
+    height: auto;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #FFDAB9;
+    border: 2px solid #72808C;
+    border-radius: 20px;
+    color: antiquewhite;
+}

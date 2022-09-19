@@ -9,6 +9,14 @@ a {
     box-shadow: 10px 11px 7px rgba(0, 0, 0, 0.25);
 }
 
+.title {
+    font-size: 30px;
+    height: auto;
+    font-family: "Brush Script MT";
+    font-weight: normal;
+    color: #8C6C6B;
+}
+
 .quote {
     font-size: 15px;
     height: auto;

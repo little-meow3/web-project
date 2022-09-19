@@ -3,103 +3,143 @@
 
 <head>
   <title>Web программирование</title>
-  <link href="outlines.css" rel="stylesheet">
+  <link href="CSS\style.css" rel="stylesheet">
+  <link href="CSS\header.css" rel="stylesheet">
+  <link href="CSS\footer.css" rel="stylesheet">
+  <link href="CSS\main.css" rel="stylesheet">
   <meta charset="utf-8">
 </head>
 
 <body>
 
   <header>
-    <h1>
-      // лого
-    </h1>
-    <pre>
-      /\_____/\
-     /  o   o  \
-    ( ==  ^  == )
-     )         (
-    (           )
-   ( (  )   (  ) )
-  (__(__)___(__)__)
-    </pre>
-    <h1>
-      // название
-    </h1>
-    <p>
-      <q>
-        <i>
-          Лучше быть котиком чем не быть котиком
-        </i>
-      </q>
-       - @little_meow<sup>3</sup>.
-    </p>
-    <nav>
+    <div>
+      <img src="котик_в_очках.jpg"
+           alt="котик в очечках"
+           class="logo">
+      <h1>
+        // название
+      </h1>
+      <p>
+        <q class="quote">
+          <i>
+            Лучше быть котиком чем не быть котиком
+          </i>
+        </q>
+        -
+        <a href="https://github.com/little-meow3"> @little_meow<sup>3</sup></a>
+      </p>
       <h3>
-        Расписание занятий
+        <a href="">Вход</a>
       </h3>
-    </nav>
-    <nav>
-      <h3>
-        Преподаватели
-      </h3>
-    </nav>
-    <nav>
-      <h3>
-        Отзывы
-      </h3>
-    </nav>
+    </div>
+    <div class="navigation">
+      <nav>
+        <h3>
+          <a href="">Расписание занятий</a>
+        </h3>
+      </nav>
+      <nav>
+        <h3>
+          <a href="">Преподаватели</a>
+        </h3>
+      </nav>
+      <nav>
+        <h3>
+          <a href="">Отзывы</a>
+        </h3>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>
-        О школе
-      </h2>
-      <p>
-        текст
-      </p>
-      <h2>
-      Преимущества
-      </h2>
-      <p>
-        текст
-      </p>
-      <h2>
-        Как проходят занятия
-      </h2>
-      <p>
-        текст
-      </p>
-      <h2>
-        Достижения
-      </h2>
-      <ol>
-        <li>Ещё ничего не выиграли в 2022</li>
-        <li>Обязательно что-нибудь выиграем в 2023</li>
-        <li><ins>Точно</ins> возьмем награду в 2024</li>
-      </ol>
+    <section class="information_block">
+      <div>
+        <h2 class="information_header">
+          О школе
+        </h2>
+        <p class="information_text">
+          текст
+        </p>
+      </div>
+      <div>
+        <h2 class="information_header">
+        Преимущества
+        </h2>
+        <p class="information_text">
+          много текста
+        </p>
+      </div>
+      <div>
+        <h2 class="information_header">
+          Как проходят занятия
+        </h2>
+        <p class="information_text">
+          тоже текст
+        </p>
+      </div>
+      <div>
+        <h2 class="information_header">
+          Достижения
+        </h2>
+        <ol class="information_text">
+          <li>Ещё ничего не выиграли в 2022</li>
+          <li>Обязательно что-нибудь выиграем в 2023</li>
+          <li><ins>Точно</ins> возьмем награду в 2024</li>
+        </ol>
+      </div>
     </section>
-    <section>
-      <h2>
-        Записаться на пробный урок
-      </h2>
+    <section class="registration_for_lesson">
+      <div>
+        <h2>
+          Записаться на пробный урок
+        </h2>
+        <form>
+          <label for="email" class="input_field">
+            Email:
+          </label>
+          <input type="text" placeholder="Введите email...">
+          <br>
+          <label for="name" class="input_field">
+            Ваше имя:
+          </label>
+          <input type="text"
+                 placeholder="Введите ваше имя...">
+          <br>
+          <label for="subject" class="input_field">
+            Выберите занятие:
+          </label>
+          <select>
+            <option> -------------- </option>
+            <option> шото номер раз </option>
+            <option> шото номер два </option>
+            <option> шото номер три </option>
+          </select>
+          <br>
+          <input type="submit" value="Записаться">
+        </form>
+      </div>
     </section>
 
   </main>
 
   <footer>
-    Контактная информация
-    <ul>
-      <li>+7-701-684-40-20</li>
-      <li>315653@niuitmo.ru</li>
-    </ul>
-    <pre>
-        /\_/\  (
-       ( ^.^ ) _)
-         \"/  (
-       ( | | )
-      (__d b__)
-    </pre>
+    <div class="contact_information">
+      <p>
+        Контактная информация
+      </p>
+      <ul>
+        <li>+7-701-684-40-20</li>
+        <li>315653@niuitmo.ru</li>
+      </ul>
+      <pre>
+          /\_/\  (
+         ( ^.^ ) _)
+           \"/  (
+         ( | | )
+        (__d b__)
+      </pre>
+    </div>
   </footer>
 
 </body>

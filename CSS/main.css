@@ -1,0 +1,37 @@
+.information_header {
+    font-size: 20px;
+    height: auto;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    /*background: #FFDAB9;*/
+    color: burlywood;
+}
+
+.information_text {
+    font-size: 15px;
+    height: auto;
+    font-family: Arial;
+    font-weight: bold;
+    /*background: #FFDAB9;*/
+    color: #8C6C6B;
+}
+
+.information_block {
+    /*background: #FFDAB9;*/
+    border: 2px solid #72808C;
+    border-radius: 20px;
+}
+
+.registration_for_lesson {
+    border: 2px solid #72808C;
+    border-radius: 20px;
+}
+.input_field {
+    font-size: 15px;
+    height: auto;
+    font-family: "Arial";
+    font-weight: bold;
+    /*background: #FFDAB9;*/
+    color: #8C6C6B;
+}

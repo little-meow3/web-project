@@ -1,41 +1,113 @@
-a {
-    text-decoration: none;
-    color: #8C6C6B !important;
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.logo {
-    width: 130px;
-    border-radius: 25%;
-    box-shadow: 10px 11px 7px rgba(0, 0, 0, 0.25);
+.title_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background: var(--main-background-color);
 }
 
 .title {
-    font-size: 30px;
-    height: auto;
     font-family: "Brush Script MT";
     font-weight: normal;
-    color: #8C6C6B;
-}
-
-.quote {
-    font-size: 15px;
-    height: auto;
-    font-family: "Brush Script MT";
-    font-weight: normal;
-    text-transform: none;
-    background: #FFDAB9;
-    border-radius: 10px;
-    color: black;
+    color: var(--main-text-color);
 }
 
 .navigation {
-    font-size: 15px;
-    height: auto;
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+}
+
+.navigation_text {
     font-family: Arial;
     font-weight: bold;
-    text-transform: uppercase;
-    background: #FFDAB9;
-    border: 2px solid #72808C;
-    border-radius: 20px;
-    color: antiquewhite;
+    text-transform: none;
+    background: var(--second-background-color);
+    border: 1px solid var(--general-text-color);
+    border-radius: 8px;
+    color: var(--general-text-color);
+    padding: 5px;
+}
+
+.button_navigation_active {
+    color: var(--main-text-color);
+}
+
+@media (min-width: 1070px) {
+    .navigation {
+        margin: 8% 0 0 0;
+    }
+}
+
+@media (max-width: 1070px) {
+    .navigation {
+        margin: 10% 0 0 0;
+    }
+}
+
+@media (max-width: 855px) {
+    .navigation {
+        margin: 12% 0 0 0;
+    }
+}
+
+@media (max-width: 530px) {
+    .navigation {
+        margin: 14% 0 0 0;
+    }
+}
+
+@media (min-width: 793px) {
+    .title {
+        height: 15px;
+        font-size: 50px;
+    }
+    .navigation_text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 793px) {
+    .title {
+        height: 12px;
+        font-size: 42px;
+    }
+    .navigation_text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 585px) {
+    .title {
+        height: 10px;
+        font-size: 37px;
+    }
+    .navigation_text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 502px) {
+    .title {
+        font-size: 28px;
+    }
+    .navigation_text {
+        font-size: 9px;
+    }
+}
+
+.github_link {
+    font-family: Arial;
 }

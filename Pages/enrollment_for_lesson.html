@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Запись на урок</title>
+  <link href="..\CSS\style.css" rel="stylesheet">
+  <link href="..\CSS\header.css" rel="stylesheet">
+  <link href="..\CSS\main.css" rel="stylesheet">
+  <link href="..\CSS\footer.css" rel="stylesheet">
+  <link href="..\CSS\colors.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <script src="..\JS\script.js"></script>
+  <script src="..\JS\enrollment.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="title_block">
+        <h1 class="title">
+          Meow School
+        </h1>
+      </div>
+
+    </div>
+    <nav class="navigation">
+      <a data-link="main" class="button navigation_text button_navigation_main" href="index.html">Главная</a>
+      <a data-link="teachers" class="button navigation_text button_navigation_teachers" href="teachers.html">Преподаватели</a>
+      <a data-link="enrollment" class="button navigation_text button_navigation_enrollment" href="enrollment_for_lesson.html">Записаться на урок</a>
+      <a data-link="reviews" class="button navigation_text button_navigation_reviews" href="reviews.html">Отзывы</a>
+      <a data-link="login" class="button navigation_text button_navigation_login" href="login.html">Вход</a>
+    </nav>
+  </header>
+  <main>
+    <div class="enrollment_block" id="enrollment_block">
+      <h3 class="enrollment_header">
+        Для записи на занятие заполните соответствующие поля
+      </h3>
+      <form>
+        <label>
+          Ваше имя:
+        </label>
+        <input maxlength="15"
+               type="text"
+               placeholder="Введите ваше имя..."
+               class="enrollment_input"
+        >
+        <br>
+        <label>
+          Выберите занятие:
+        </label>
+        <select class="enrollment_input">
+          <option> iOS </option>
+          <option> DevOps </option>
+          <option> Java </option>
+          <option> React </option>
+          <option> ML </option>
+        </select>
+        <br>
+        <button type="submit">
+          Записаться
+        </button>
+      </form>
+      <br>
+      <div class="enrollment_output" id="enrollment_output">
+        <div class="enrollment_item">
+          <span class="enrollment_item_body">
+            <p class="enrollment_item_name">
+              Name
+            </p>
+            <p class="enrollment_item_lesson">
+              Lesson
+            </p>
+          </span>
+          <div class="delete_output_item_button">
+            удалить
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="load_time"></div>
+</body>
+</html>

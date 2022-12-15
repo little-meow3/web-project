@@ -128,3 +128,9 @@
     align-items: center;
     text-align: center;
 }
+
+.reviews_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

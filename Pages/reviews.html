@@ -7,6 +7,7 @@
   <link href="..\CSS\main.css" rel="stylesheet">
   <link href="..\CSS\footer.css" rel="stylesheet">
   <link href="..\CSS\colors.css" rel="stylesheet">
+  <link rel="stylesheet" href="..\CSS\preloader.css" type="text/css">
   <meta charset="utf-8">
   <script src="..\JS\script.js"></script>
 </head>
@@ -28,6 +29,40 @@
       <a data-link="login" class="button navigation_text button_navigation_login" href="login.html">Вход</a>
     </nav>
   </header>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+  <main>
+    <table style="width: 100%">
+      <tbody>
+        <tr>
+          <td style="width:25%; vertical-align:top" class="side-column">
+          </td>
+          <td style="width: 50%">
+            <form>
+              <div class="reviews_header">
+                <h2 class="enrollment_header">Отзывы</h2>
+              </div>
+              <p class="information_text" id="#error"></p>
+              <div class="posts">
+                <div class="wrapper">
+                  <div class="posts__list"></div>
+                </div>
+              </div>
+              <script src="../JS/reviews.js"></script>
+              <div class="spinner-wrapper">
+                <div class="spinner"></div>
+              </div>
+            </form>
+          </td>
+          <td style="width: 25%;vertical-align: top" class="side-column"></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
   <div class="load_time"></div>
 </body>
 </html>

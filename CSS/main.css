@@ -111,14 +111,18 @@
 }
 
 .enrollment_output {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.enrollment_item {
     height: 90px;
     width: 250px;
     border: black solid 1px;
     border-radius: 15px;
     box-shadow: 10px 5px 5px darkgray;
-}
-
-.enrollment_item {
     display: flex;
     justify-content: space-around;
     align-items: center;

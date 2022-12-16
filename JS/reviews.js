@@ -2,6 +2,7 @@ count = Math.floor(Math.random() * 10)
 if (count == 0) {
     count = 1
 }
+count += 10
 const url = "https://jsonplaceholder.typicode.com/comments?_limit="+count
 const postsList = document.querySelector('.posts__list');
 

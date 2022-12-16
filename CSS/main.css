@@ -128,3 +128,25 @@
     align-items: center;
     text-align: center;
 }
+
+.reviews_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elevator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elevator-button {
+    font-size: 20px;
+    color: var(--general-text-color);
+    background: var(--second-background-color);
+    border: 1px solid var(--main-text-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px darkgray;
+    padding: 5px;
+}

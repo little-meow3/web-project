@@ -11,7 +11,7 @@ function calculateLoadTime() {
     const div = document.querySelector(".load_time")
 
     window.addEventListener('load', () => {
-        div.innerHTML = " Время загрузки: " + ((new Date().getTime() - startTime) / 1000) + " секунды"
+        div.innerHTML = " Время загрузки: клиент - " + (new Date().getTime() - startTime) + " мс"
     })
 }
 
@@ -61,23 +61,23 @@ function highlightSelectedButton() {
 
 function displayActiveButton() {
     const navigationLinks = document.querySelectorAll('.button');
-    if (document.location.pathname.includes("index.html")) {
+    if (document.location.pathname.includes("index") || document.location.pathname.endsWith('/')) {
         [...navigationLinks].find(link => link.dataset.link === 'main').classList.add('button_navigation_active')
     }
 
-    if (document.location.pathname.includes("teachers.html")) {
+    if (document.location.pathname.includes("teachers")) {
         [...navigationLinks].find(link => link.dataset.link === 'teachers').classList.add('button_navigation_active')
     }
 
-    if (document.location.pathname.includes("enrollment_for_lesson.html")) {
+    if (document.location.pathname.includes("enrollment_for_lesson")) {
         [...navigationLinks].find(link => link.dataset.link === 'enrollment').classList.add('button_navigation_active')
     }
 
-    if (document.location.pathname.includes("reviews.html")) {
+    if (document.location.pathname.includes("reviews")) {
         [...navigationLinks].find(link => link.dataset.link === 'reviews').classList.add('button_navigation_active')
     }
 
-    if (document.location.pathname.includes("login.html")) {
+    if (document.location.pathname.includes("login")) {
         [...navigationLinks].find(link => link.dataset.link === 'login').classList.add('button_navigation_active')
     }
 }

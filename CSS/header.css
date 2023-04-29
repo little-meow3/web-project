@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .header {
     display: flex;
     flex-direction: row;
@@ -11,6 +14,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
+    top: 0;
     width: 100%;
     background: var(--main-background-color);
 }
@@ -22,12 +26,13 @@
 }
 
 .navigation {
-   display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 5%;
+    height: auto;
 }
 
 .navigation_text {
@@ -43,6 +48,37 @@
 
 .button_navigation_active {
     color: var(--main-text-color);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: var(--second-background-color);
+    height: 60px;
+    width: 180px;
+    padding: 5px;
+    box-sizing: border-box;
+    top: 129%;
+    margin-left: -60px;
+    border-radius: 8px;
+    z-index: 1;
+    border: 1px solid var(--general-text-color);
+}
+
+.dropdown a {
+    color: var(--general-text-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.buttonDrop:hover + .dropdown,
+.dropdown:hover {
+    display: block;
+}
+
+.header-dropdown {
+    background: #00dbde;
+    position: relative;
 }
 
 @media (min-width: 1070px) {
@@ -110,4 +146,8 @@
 
 .github_link {
     font-family: Arial;
+}
+
+.contain-login {
+    .
 }

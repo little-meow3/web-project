@@ -21,63 +21,79 @@ function highlightSelectedButton() {
     const buttonEnrollment =  document.querySelector(".button_navigation_enrollment")
     const buttonReviews =  document.querySelector(".button_navigation_reviews")
     const buttonLogin =  document.querySelector(".button_navigation_login")
+    const buttonSignIn = document.querySelector(".sing_in_button")
+    const buttonSignUp = document.querySelector(".sign_up_button")
 
-    buttonMain.addEventListener('mouseenter', () => {
-        document.body.style.cursor = 'point'
-        buttonMain.style.background = "#bdd3cc"
-    })
-    buttonMain.addEventListener('mouseout', () => {
-        buttonMain.style.background = "#efc8c8"
-    })
+    // buttonMain.addEventListener('mouseenter', () => {
+    //     document.body.style.cursor = 'point'
+    //     buttonMain.style.background = "#bdd3cc"
+    // })
+    // buttonMain.addEventListener('mouseout', () => {
+    //     buttonMain.style.background = "#efc8c8"
+    // })
+    //
+    // buttonTeachers.addEventListener('mouseenter', () => {
+    //     buttonTeachers.style.background = "#bdd3cc"
+    // })
+    // buttonTeachers.addEventListener('mouseout', () => {
+    //     buttonTeachers.style.background = "#efc8c8"
+    // })
+    //
+    // buttonEnrollment.addEventListener('mouseenter', () => {
+    //     buttonEnrollment.style.background = "#bdd3cc"
+    // })
+    // buttonEnrollment.addEventListener('mouseout', () => {
+    //     buttonEnrollment.style.background = "#efc8c8"
+    // })
+    //
+    // buttonReviews.addEventListener('mouseenter', () => {
+    //     buttonReviews.style.background = "#bdd3cc"
+    // })
+    // buttonReviews.addEventListener('mouseout', () => {
+    //     buttonReviews.style.background = "#efc8c8"
+    // })
+    //
+    // buttonLogin.addEventListener('mouseenter', () => {
+    //     buttonLogin.style.background = "#bdd3cc"
+    // })
+    // buttonLogin.addEventListener('mouseout', () => {
+    //     buttonLogin.style.background = "#efc8c8"
+    // })
 
-    buttonTeachers.addEventListener('mouseenter', () => {
-        buttonTeachers.style.background = "#bdd3cc"
-    })
-    buttonTeachers.addEventListener('mouseout', () => {
-        buttonTeachers.style.background = "#efc8c8"
-    })
+    // buttonSignIn.addEventListener('mouseenter', () => {
+    //     buttonSignIn.style.background = "#354b8a"
+    // })
+    // buttonSignIn.addEventListener('mouseout', () => {
+    //     buttonSignIn.style.background = "#f5f1f1"
+    // })
 
-    buttonEnrollment.addEventListener('mouseenter', () => {
-        buttonEnrollment.style.background = "#bdd3cc"
-    })
-    buttonEnrollment.addEventListener('mouseout', () => {
-        buttonEnrollment.style.background = "#efc8c8"
-    })
-
-    buttonReviews.addEventListener('mouseenter', () => {
-        buttonReviews.style.background = "#bdd3cc"
-    })
-    buttonReviews.addEventListener('mouseout', () => {
-        buttonReviews.style.background = "#efc8c8"
-    })
-
-    buttonLogin.addEventListener('mouseenter', () => {
-        buttonLogin.style.background = "#bdd3cc"
-    })
-    buttonLogin.addEventListener('mouseout', () => {
-        buttonLogin.style.background = "#efc8c8"
-    })
+    // buttonSignUp.addEventListener('mouseenter', () => {
+    //     buttonSignUp.style.background = "#354b8a"
+    // })
+    // buttonSignUp.addEventListener('mouseout', () => {
+    //     buttonSignUp.style.background = "#f5f1f1"
+    // })
 }
 
 function displayActiveButton() {
-    const navigationLinks = document.querySelectorAll('.button');
-    if (document.location.pathname.includes("index") || document.location.pathname.endsWith('/')) {
-        [...navigationLinks].find(link => link.dataset.link === 'main').classList.add('button_navigation_active')
-    }
-
-    if (document.location.pathname.includes("teachers")) {
-        [...navigationLinks].find(link => link.dataset.link === 'teachers').classList.add('button_navigation_active')
-    }
-
-    if (document.location.pathname.includes("enrollment_for_lesson")) {
-        [...navigationLinks].find(link => link.dataset.link === 'enrollment').classList.add('button_navigation_active')
-    }
-
-    if (document.location.pathname.includes("reviews")) {
-        [...navigationLinks].find(link => link.dataset.link === 'reviews').classList.add('button_navigation_active')
-    }
-
-    if (document.location.pathname.includes("login")) {
-        [...navigationLinks].find(link => link.dataset.link === 'login').classList.add('button_navigation_active')
-    }
+    // const navigationLinks = document.querySelectorAll('.button');
+    // if (document.location.pathname.includes("index") || document.location.pathname.endsWith('/')) {
+    //     [...navigationLinks].find(link => link.dataset.link === 'main').classList.add('button_navigation_active')
+    // }
+    //
+    // if (document.location.pathname.includes("teachers")) {
+    //     [...navigationLinks].find(link => link.dataset.link === 'teachers').classList.add('button_navigation_active')
+    // }
+    //
+    // if (document.location.pathname.includes("enrollment_for_lesson")) {
+    //     [...navigationLinks].find(link => link.dataset.link === 'enrollment').classList.add('button_navigation_active')
+    // }
+    //
+    // if (document.location.pathname.includes("reviews")) {
+    //     [...navigationLinks].find(link => link.dataset.link === 'reviews').classList.add('button_navigation_active')
+    // }
+    //
+    // if (document.location.pathname.includes("login")) {
+    //     [...navigationLinks].find(link => link.dataset.link === 'login').classList.add('button_navigation_active')
+    // }
 }
